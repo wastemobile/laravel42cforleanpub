@@ -1,26 +1,22 @@
-# Laravel 4.2 中文文件
+# 測試 Leanpub
 
-你可以在 [Laravel 繁體中文網站](http://laravel.tw) 上看到這份完整的中文文件，以及更多相關、深入與延伸的學習資料。若你使用 Mac 電腦，也安裝了 [Dash](http://kapeli.com/dash) 這個好用的文件管理軟體，還可以前往 [這裏](https://github.com/laravel-taiwan/laraveltw.docset) 下載可匯入的格式，可以閱讀並方便查詢。
+使用 Markdown 書寫，組織一組純文字檔案，透過一個轉製程式，或是讓一個網站服務代為製作，這就是電子書的出版流程。
 
-## 學習提要
+才沒有那麼簡單...。
 
-Laravel 是一套富有表達性且具有簡潔語法的 PHP 網頁應用程式框架，提供了驗證(authentication)、路由(routing)、sessions、快取(caching) 等開發過程中經常用到的工具或功能，竭取了各框架的優點集中到 Laravel 中，這些框架甚至是基於 Ruby on Rails、ASP.NET MVC 和 Sinatra 等開發語言或工具。
+我拿 [Laravel 4.2 中文文件](http://laravel.tw/docs/4.2/quick) 當範例，拉回開放倉儲中的文件，修改成 GitBook 需要的結構與格式，製成了 [Laravel 4.2 Chinese Doc 繁體中文文件](http://wastemobile.gitbooks.io/laravel-4-2-doc/) ，既可以方便線上瀏覽（相對原文件網頁來說，目錄比較清楚、字比較美觀且可調整大小，還能記錄哪些章節讀過），也能下載各種格式在載體上閱讀（iPad 與 Kindle）。
 
-Laravel 是易於理解且強大的，它提供了強大的工具來開發大型、穩健的應用程式。傑出的 IoC、資料庫遷移工具和緊密集成的單元測試，這些工具賦予你構建任何應用程式的能力。
+然後想要擺上 Leanpub，就發現事情不太妙。
 
-PHP 與關聯式資料庫的基礎知識還是必要的，當然硬著頭皮從框架應用開始學習也是一種模式，找一本基礎知識的書籍快速閱讀後擺在手邊參考也很好。有一份看起來不是翻譯得很完整的 [PHP之道（PHP the right way）](http://wulijun.github.io/php-the-right-way/) 可以試著讀一讀。
+簡單說：
 
-## Contribution Guidelines
+1. 檔案目錄要求擺放的結構不同。
+2. 用來指引、取文檔製成書籍的目錄指引檔不同。
+3. 封面要求的大小、命名、擺放位置不同。
+4. 實際轉製後發現，Markdown 解析的語法也有些許不同。
 
-If you are submitting documentation for the **current stable release**, submit it to the corresponding branch. For example, documentation for Laravel 4.2 would be submitted to the `4.2` branch. Documentation intended for the next release of Laravel should be submitted to the `master` branch.
+## 解析
 
-## License
+畢竟 Markdown 一開始只是拿來方便轉成 HTML 片段，真想拿來製作電子書，語法的擴充勢在必行。
 
-The MIT License (MIT)
-Copyright © Taylor Otwell
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+然後就是書稿（manascript）擺放的結構問題。
